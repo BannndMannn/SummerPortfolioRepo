@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 50%;
+    height: 100vh;
+    background-image: url(images/selfie.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#logo{
+    width: 200px;
+    height:200px;
+}
+
