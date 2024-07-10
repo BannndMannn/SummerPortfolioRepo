@@ -6,22 +6,97 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <body>
-        <h1>My portfolio</h1>
-      <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/THGP_Logo.png" class="logo" alt="THGP logo" id="logo">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
+
+  <!-------HEADER--------->
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="images/THGP_Logo.png" class="logo" alt="THGP logo" id="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-text">
+      <p>professionional basketball player</p>
+      <h3>Hello my name is <span>Madden</span>,<br>Im a Hooper at Pinole High School<br>From Richmond,CA</h3>
+    </div>
+  </div>
+</div>
+ <!-------END HEADER--------->
+
+<!-------ABOUT--------->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+
+          <div class="about-col-1">
+            <img src="images/IMG_1715.jpg">
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hey my name is Madden and i'm from Richmond, Ca
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">education</p>
+            </div>
+            <!--skills-->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Python coding</span><br> basic web devolpment</li>
+                <li><span>poetry</span><br>reading court documents</li>
+              </ul>
+            </div>
+<!---->
+            <div class="tab-contents" id="Experience" >
+              <ul>
+                <li><span>Python coding</span><br> basic web devolpment</li>
+                <li><span>poetry</span><br>reading court documents</li>
+              </ul>
+          </div>
+     <!---->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Python coding</span><br> basic web devolpment</li>
+              <li><span>poetry</span><br>reading court documents</li>
+            </ul>
+        </div>
       </div>
-      </div>
+    </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname)
+      {
+        for(tablink of tablinks){
+          tablink.classlist.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+          tabcontent.classlist.remove("active-tab");
+        }
+        
+      }
+    </script>
+
 </body>
 </html>
