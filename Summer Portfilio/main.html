@@ -3,100 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/745ed4d0f2.js" crossorigin="anonymous"></script>
 </head>
-
-<body>
-
-  <!-------HEADER--------->
+ <body>
 <div id="header">
-  <div class="container">
-    <nav>
-      <img src="images/THGP_Logo.png" class="logo" alt="THGP logo" id="logo">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="header-text">
-      <p>professionional basketball player</p>
-      <h3>Hello my name is <span>Madden</span>,<br>Im a Hooper at Pinole High School<br>From Richmond,CA</h3>
+    <div class="container">
+        <nav>
+            <img src="images/THGP_Logo.png" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times"></i>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="header-text">
+            <p>Fashion Designer</p>
+            <h1>Hello, I'm <span>Madden</span><br>From California</h1>
+        </div>
     </div>
-  </div>
 </div>
- <!-------END HEADER--------->
-
-<!-------ABOUT--------->
-  <div id="about">
+<!-- -----------about---------- -->
+<div id="about">
     <div class="container">
         <div class="row">
-
-          <div class="about-col-1">
-            <img src="images/IMG_1715.jpg">
-          </div>
-
-          <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
-            <p>
-              Hey my name is Madden and i'm from Richmond, Ca
-            </p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">education</p>
+            <div class="about-col-1">
+                <img src="images/IMG_1715.jpg">
             </div>
-            <!--skills-->
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Python coding</span><br> basic web devolpment</li>
-                <li><span>poetry</span><br>reading court documents</li>
-              </ul>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, My name is Madden L. and I'm born and raised in the Bay Area.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Basketball</span><br>Basketball Skills Training</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Social Media Interaction</span><br>High Media Training</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="exp">
+                    <ul>
+                        <li><span>2024-2025</span><br>Immersion Program - The Hidden Genius Project</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2022</span><br>Lake Elementary School</li>
+                        <li><span>2022-2024</span><br>Summit K2 Middle School</li>
+                        <li><span>2024-2028</span><br>Berkeley High School???</li>
+                    </ul>
+                </div>
             </div>
-<!---->
-            <div class="tab-contents" id="Experience" >
-              <ul>
-                <li><span>Python coding</span><br> basic web devolpment</li>
-                <li><span>poetry</span><br>reading court documents</li>
-              </ul>
-          </div>
-     <!---->
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>Python coding</span><br> basic web devolpment</li>
-              <li><span>poetry</span><br>reading court documents</li>
-            </ul>
-        </div>
-      </div>
-    </div>
-            </div>
-          </div>
-        </div>
         </div>
     </div>
-
-    <script>
-
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname)
-      {
+</div>
+<!-- ---------services---------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Basketball skills Training</h2>
+                <p></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Fashion Designer</h2>
+                <p></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Media Training</h2>
+                <p></p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- --------portfolio---------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/hobby1.png">
+                <div class="layer">
+                    <h3>Basketball Media App</h3>
+                    <p>The app that connects you to high level trainers,coaches,and players in the Basketball world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_2677.jpg">
+                <div class="layer">
+                    <h3>Fashion Training</h3>
+                    <p>The app that connects you with fashion Designers and others upcoming clothing brand owners. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_2676.jpg">
+                <div class="layer">
+                    <h3>Media Training Courses</h3>
+                    <p>The app that connects you with me in proper Media traning to help you in the world of Social Media. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>  madden.leonard@hgs.hiddengeniusproject.org</p>
+                <p><i class="fa-solid fa-phone"></i> (510)830-8669</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Madden. Made with <i class="fa-solid fa-heart"></i> by Madden L. </p>
+    </div>
+ </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
         for(tablink of tablinks){
-          tablink.classlist.remove("active-link");
+            tablink.classList.remove("active-link")
         }
-
         for(tabcontent of tabcontents){
-          tabcontent.classlist.remove("active-tab");
+            tabcontent.classList.remove("active-tab")
         }
-        
-      }
-    </script>
-
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzpRwSAnNGZCd-tulZLR25owZqEQw8Jg8bi1U3MzDXClyEPh5tDcEx6DqrTIlimZCA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
+New
+
+
